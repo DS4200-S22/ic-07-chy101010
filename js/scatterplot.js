@@ -14,7 +14,7 @@ const svg3 = d3.select("#csv-scatter")
   .attr("height", height - margin.top - margin.bottom)
   .attr("viewBox", [0, 0, width, height]);
 
-d3.csv('../data/scatter.csv').then(data => {
+d3.csv('../ic-07-chy101010//data/scatter.csv').then(data => {
   let maxX3 = d3.max(data, function(d) {return d.day;})
   let maxY3 = d3.max(data, function(d) {return d.score;})
   console.log(maxX3, maxY3)
