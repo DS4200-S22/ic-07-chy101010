@@ -123,7 +123,7 @@ const svg2 = d3.select("#csv-bar")
   .attr("viewBox", [0, 0, width, height]);
 
 // Step 11
-d3.csv('../ic-07-chy101010/data/barchart.csv').then(data => {
+d3.csv('../data/barchart.csv').then(data => {
   let maxY3 = d3.max(data, function (d) { return d.score; });
 
   let yScale2 = d3.scaleLinear()
